@@ -1,0 +1,90 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho e navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Cor ao passar o mouse */
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo da seleção (Home) */
+#Home {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#Home h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#Home p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Imagem de perfil */
+#Home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    margin-top: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
