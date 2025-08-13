@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    display: flex;
+    flex-direction: column; /* Para empurrar o rodapé para o fundo */
 }
 
 /* Estilo do cabeçalho e navegação */
@@ -23,17 +26,19 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Alinha o menu à esquerda */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding-left: 20px; /* Espaçamento à esquerda */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Ajusta o espaçamento entre os itens */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px; /* Aumenta o tamanho da fonte */
     transition: color 0.3s;
 }
 
@@ -41,10 +46,21 @@ nav ul li a:hover {
     color: #4CAF50; /* Cor ao passar o mouse */
 }
 
+/* Estilo da imagem no cabeçalho (nav) */
+.nav-profile-image {
+    width: 100px; /* Tamanho da imagem ajustado */
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    margin-right: 20px; /* Espaço entre a imagem e os links */
+}
+
 /* Estilo da seção principal */
 main {
     padding: 20px;
     text-align: center;
+    margin-top: 20px; /* Adiciona margem superior */
+    flex: 1; /* Faz o main ocupar o restante do espaço */
 }
 
 /* Estilo da seleção (Home) */
@@ -54,21 +70,21 @@ main {
 }
 
 #Home h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Ajuste do tamanho do título */
     color: #333;
     margin-bottom: 15px;
 }
 
 #Home p {
-    font-size: 1.2em;
+    font-size: 1.3em; /* Ajuste do tamanho do texto */
     color: #555;
     margin-bottom: 20px;
 }
 
-/* Imagem de perfil */
+/* Estilo da imagem de perfil na seção principal */
 #Home img {
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Tamanho da imagem ajustado */
+    height: 120px;
     border-radius: 50%;
     border: 5px solid #4CAF50;
     margin-top: 10px;
@@ -80,9 +96,9 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: relative; /* Pode ser fixed, mas a posição relativa é mais flexível */
+    bottom: 0;
 }
 
 footer p {
